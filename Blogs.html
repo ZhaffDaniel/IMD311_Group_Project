@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Title -->
+        <title>Pulau Kapas, Terengganu</title>
+
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,800&display=swap");
+            @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
+            body {
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                background: #000;
+                color: #fff;
+                font-family: Roboto, sans-serif;
+                font-size: 20px;
+            }
+            h3 {
+                color: white;
+            }
+            .body-bg {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/adrien-brun-h7Eb45roTp8-unsplash.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .split {
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                font-weight: lighter;
+                padding: 20px;
+                background-color: black;
+            }
+            .split h2 {
+                font-size: 50px;
+                text-align: center;
+                font-family: "Roboto", sans-serif;
+                font-style: italic;
+                line-height: initial;
+                font-weight: lighter;
+                white-space: pre;
+                color: white;
+            }
+            .split h2 span {
+                white-space: break-spaces;
+                transition: font-weight 0.2s ease;
+                position: relative;
+            }
+            .split h2 span::before, .split h2 span::after {
+                content: attr(data-char);
+                position: absolute;
+                left: 0;
+                color: transparent;
+            }
+            .split h2 span::after{
+                z-index: 2;
+                filter: none;
+                color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .split h2 ::after {
+                content: "|";
+                width: 100%;
+                color: white;
+                animation: caret 1s infinite;
+            }
+            @keyframes caret {
+                50% {
+                    color: transparent;
+                }
+            }
+            .container.background-white {
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                color: white;
+                border-radius: 7px;
+            }
+            #imgf img {
+                height:600px;
+                border-radius: 7px;
+                transition: transform .5s ease;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            #imgf:hover img {
+                transform: scale(1.1);
+            }
+            #base .container {
+                border-radius: 7px;
+            }
+            #hornav {
+                background-color: black;
+            }
+            .fa-th {
+                cursor: pointer;
+            }
+            .fa-font {
+                cursor: pointer;
+            }
+            .fa-copy {
+                cursor: default;
+            }
+            :root {
+                --d: 700ms;
+                --e: cubic-bezier(0.19, 1, 0.22, 1);
+                --font-sans: 'Rubik', sans-serif;
+                --font-serif: 'Cardo', serif;
+            }
+            .ff{
+                box-sizing: border-box;
+                height: 100%;
+                display: grid;
+                place-items: center;
+            }
+            .contw {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                text-align: justify;
+                font-size: 16px;
+                width: 100%;
+                height: 100%;
+            }
+            .contw img {
+                border-radius: 7px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .contw p {
+                margin-top: 30px;
+                position: relative;
+                padding: 10px;
+                width: 100%;
+            }
+            .contw p {
+                background-color: #fff;
+                padding: 1.125em 1.5em;
+                font-size: 1.25em;
+                border-radius: 1rem;
+                box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+            }
+            .contw p::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                bottom: 100%;
+                left: 1.5em;
+                border: 0.75rem solid transparent;
+                border-top: none;
+                border-bottom-color: #fff;
+                filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+            }
+            .contw {
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+                line-height: 1.5;
+                font-weight: 300;
+                color: #192229;
+            }
+            .contw {
+                margin:0;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .contw {
+                padding: 0 2rem;
+            }
+.navlink a::after {
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navlink a:hover:after {
+    width: 100%; 
+  left: 0; 
+}
+        </style>
+    </head>
+
+    <body>
+
+        <div class="split">
+  <h2>  ISLANDS
+  OF MALAYSIA</h2>
+        </div>
+
+<div class="body-bg"> <!-- This Is The Background (START) -->
+
+            <div id="hornav" class="container no-padding">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="text-center visible-lg">
+                            <ul id="hornavmenu" class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html" class="fa-home">Home</a>
+                                </li>
+                                <li>
+                                    <a class="fa-copy">Destinations</a>
+                                    <ul>
+                                        <li>
+                                            <a href="Kapas.html">Pulau Kapas</a>
+                                        </li>
+                                        <li>
+                                            <a href="Tioman.html">Pulau Tioman</a>
+                                        </li>
+                                        <li>
+                                            <a href="Mabul.html">Pulau Mabul</a>
+                                        </li>
+                                        <li>
+                                            <a href="Sipadan.html">Pulau Sipadan</a>
+                                        </li>
+                                        <li>
+                                            <a href="Pangkor.html">Pulau Pangkor</a>
+                                        </li>
+                                        <li>
+                                            <a href="Perhentian.html">Pulau Perhentian</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="fa-th">Gallery</a>
+                                </li>
+                                <li>
+                                    <a class="fa-font">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="fa-comment">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div id="post_header" class="container" style="height: 40px"></div>
+        <div id="content-top-border" class="container"></div>
+
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <div class="ff">
+                            <main class="page-content">
+                                <div class="contw">
+                                    <div class="content3" style="color: black;">
+                                        <img class="img1" src="img/26a9802bc7f9a3ce47a27c8c7afa9a6bb48dfd5b_s2_n1.png">
+                                        <p class="copyg"><B>PULAU KAPAS |</B> JT Cafe - Located on the quieter end of the beach of Kapas but worth the walk. Delicious breakfast of eggs roti canai and an evening meal of yellow coconut chicken accompanied with drinks like fresh juices and coffees. During the day you can watch the comings and goings of people on the jetty.</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <div class="ff">
+                            <main class="page-content">
+                                <div class="contw">
+                                    <div class="content3" style="color: black;">
+                                        <img class="img1" src="img/330e66051eedb0e5a4a48f03141ecace2d1d669b_s2_n1.png">
+                                        <p class="copyg"><B>PULAU TIOMAN |</B> Tioman Cabana Beach Bistro - Tioman Cabana Beach Bistro, this bistro cafe concept is highly recommended if you are in Kampung Tekek, Pulau Tioman. Most of the food menu here is based on seafood, Asian and vegetarian including pancakes, omelettes, burgers, rice, noodles and pizza.</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <div class="ff">
+                            <main class="page-content">
+                                <div class="contw">
+                                    <div class="content3" style="color: black;">
+                                        <img class="img1" src="img/interior.jpg">
+                                        <p class="copyg"><B>PULAU SIPADAN |</B> Summer Breeze Cafe - They have pizza, pasta, local food, lovely desserts with homemade ice cream, you name it! They make you feel like home with the nice furniture and some calm music in the background. This is Sempornas best restaurant compared to other places.</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <div class="ff">
+                            <main class="page-content">
+                                <div class="contw">
+                                    <div class="content3" style="color: black;">
+                                        <img class="img1" src="img/photo0jpg.jpg">
+                                        <p class="copyg"><B>PULAU PANGKOR |</B> Daddy's Cafe - Located on the beach with beautiful views. There is a wide variety of choices on the menu including Malaysian food and different types of Western food like pizza. Highly recommend trying the chicken satay salad & also the Fresh Alu Alu which was cooked to perfection.</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <div class="ff">
+                            <main class="page-content">
+                                <div class="contw">
+                                    <div class="content3" style="color: black;">
+                                        <img class="img1" src="img/33cc37223da3f739ddcf73713cd3821323924036_s2_n1.png">
+                                        <p class="copyg"><B>PULAU PERHENTIAN |</B> Bayu Restaurant -  This restaurant is part of Alunan Resort. The menu provided here consists of local and Western dishes. Here, you may try out Nyonya Rissa Curry Chicken and Rendang Chicken while the Western dishes are Grilled Salmon and Pan Seared Rosemary Chicken.</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <div class="ff">
+                            <main class="page-content">
+                                <div class="contw">
+                                    <div class="content3" style="color: black;">
+                                        <img class="img1" src="img/a7cf9a00df6c2bb3200e88528ba7b348e9a6443b_s2_n1.png">
+                                        <p class="copyg"><B>PULAU MABUL |</B> Ocean Treasure Live Seafood Restaurant - Efficient service, fast preparation of meals even in a busy environment accompanied by calming atmosphere as for the location of the waterfront. Many delicious seafood here to enjoy but the most notable delicacy is the Tiger Shrimp.</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- === END CONTENT === -->
+
+        <div id="base">
+            <div class="container padding-vert-30 margin-top-60">
+                <div class="row">
+                    <div class="col-md-4 margin-bottom-20">
+                        <h3 class="margin-bottom-10">Contact Details</h3>
+                        <p>
+                            <span class="fa-phone">Telephone:</span> (212)888-77-88
+                            <br>
+                            <span class="fa-envelope">Email:</span>
+                            <a href="mailto:info@joomla51.com">travelblog@mail.com</a>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Menu -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div id="footermenu" class="col-md-8">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="#" target="_blank">(c) 2023 Copyright</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Travel Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div> <!-- This Is The Background (END) -->
+
+            <!-- JS -->
+            <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+            <!-- Isotope - Portfolio Sorting -->
+            <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+            <!-- Mobile Menu - Slicknav -->
+            <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+            <!-- Animate on Scroll-->
+            <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+            <!-- Slimbox2-->
+            <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+            <!-- Modernizr -->
+            <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+            <!-- End JS -->
+    </body>
+</html>
+<!-- === END FOOTER === -->
